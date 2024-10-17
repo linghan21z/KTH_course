@@ -1,0 +1,15 @@
+F:/Verilog_file/homework2/HW2_PF/lsfr_6.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/homework2/HW2_PF/lsfr_6.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module lfsr_6
+
+Top level modules:
+	lfsr_6
+
+} {} {}} F:/Verilog_file/homework2/HW2_PF/lsfr_6_tb.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/homework2/HW2_PF/lsfr_6_tb.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module lfsr_6_tb
+
+Top level modules:
+	lfsr_6_tb
+
+} {} {}}

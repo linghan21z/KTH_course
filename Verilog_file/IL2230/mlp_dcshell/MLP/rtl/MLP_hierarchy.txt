@@ -1,0 +1,8 @@
+MAC.sv
+ReLU.sv
+fully_parallel.sv
+memory.sv
+fsm_one_neuron.sv
+single_neuron.sv
+MLP_one_neuron.sv
+

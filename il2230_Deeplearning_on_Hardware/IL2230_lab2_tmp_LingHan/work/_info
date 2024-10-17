@@ -1,0 +1,475 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/h/t/htu/IL2230/lab2
+T_opt
+!s110 1701356886
+VTE<6`?7jA0Sg5T2zeS3GN2
+Z1 04 9 8 work neuron_tb behavior 1
+=1-d48564c8d7fe-6568a555-82d2d-60f
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OE;O;10.7c;67
+T_opt1
+!s110 1701349490
+Vd[GPBGRaafTXK^^1o`Uzh1
+R1
+=1-d48564c8d7fe-65688872-60f9b-4566
+R2
+R3
+n@_opt1
+R4
+R0
+Earithmetic_unit
+Z5 w1701353587
+Z6 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z7 DPx4 work 5 types 0 22 kz69YPVEf;>M^=Y=5<;921
+Z8 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z11 8./rtl/arithmetic_unit.vhd
+Z12 F./rtl/arithmetic_unit.vhd
+l0
+L6
+VEo8?OgXgJWYlXoH:f_g]a0
+!s100 l^j3BY4o>?EUI;Hk?QDIm2
+Z13 OE;C;10.7c;67
+33
+Z14 !s110 1701356882
+!i10b 1
+Z15 !s108 1701356882.000000
+Z16 !s90 -reportprogress|300|-2008|-work|work|./rtl/arithmetic_unit.vhd|
+Z17 !s107 ./rtl/arithmetic_unit.vhd|
+!i113 0
+Z18 o-2008 -work work
+Z19 tShow_source 1 Explicit 1 NoCoverage 1 CvgOpt 0
+Abehaviour
+Z20 DEx4 work 3 mac 0 22 K[n@<nDlAQ<O`WHj3U0ZQ1
+Z21 DEx4 work 7 sigmoid 0 22 cc][5><8DLhi:]2=0TAl>1
+R6
+R7
+R8
+R9
+R10
+Z22 DEx4 work 15 arithmetic_unit 0 22 Eo8?OgXgJWYlXoH:f_g]a0
+l33
+L24
+V;l@M2DGMAOBCfdl_alKk>0
+!s100 ifQdmJEMBgQYJWfomm6c<0
+R13
+33
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Efsm
+Z23 w1701272287
+R7
+R6
+R8
+R9
+R10
+R0
+Z24 8./rtl/fsm.vhd
+Z25 F./rtl/fsm.vhd
+l0
+L8
+V4^G4GT`GU:C?TXi@`PdXW1
+!s100 U4I6fA3d5z<kZNVO=jPA_0
+R13
+33
+Z26 !s110 1701356883
+!i10b 1
+Z27 !s108 1701356883.000000
+Z28 !s90 -reportprogress|300|-2008|-work|work|./rtl/fsm.vhd|
+Z29 !s107 ./rtl/fsm.vhd|
+!i113 0
+R18
+R19
+Abehavioral
+R7
+R6
+R8
+R9
+R10
+Z30 DEx4 work 3 fsm 0 22 4^G4GT`GU:C?TXi@`PdXW1
+l34
+L20
+Vj>JgFKD]1cBoN___7>Vl=0
+!s100 `XHI^BDm?h`4WDh]@:0P]2
+R13
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 0
+R18
+R19
+Emac
+Z31 w1701270688
+R6
+R7
+R8
+R9
+R10
+R0
+Z32 8./rtl/mac.vhd
+Z33 F./rtl/mac.vhd
+l0
+L9
+VK[n@<nDlAQ<O`WHj3U0ZQ1
+!s100 e<VX[goIh?V<AR^H2IW^23
+R13
+33
+R14
+!i10b 1
+R15
+Z34 !s90 -reportprogress|300|-2008|-work|work|./rtl/mac.vhd|
+Z35 !s107 ./rtl/mac.vhd|
+!i113 0
+R18
+R19
+Abehaviour
+R6
+R7
+R8
+R9
+R10
+R20
+l25
+L23
+Vkk2lT6e:nHOQF^TiC5[D`3
+!s100 `>c8_cjj1OQ1BjkJ4dDSP0
+R13
+33
+R14
+!i10b 1
+R15
+R34
+R35
+!i113 0
+R18
+R19
+Ememory
+Z36 w1701355867
+R6
+R7
+R8
+R9
+R10
+R0
+Z37 8./rtl/memory.vhd
+Z38 F./rtl/memory.vhd
+l0
+L9
+V;idkFW_b5LFJo1:CWRd^22
+!s100 JJkHI@L<=X]1JiVN=nhBG3
+R13
+33
+Z39 !s110 1701356879
+!i10b 1
+Z40 !s108 1701356879.000000
+Z41 !s90 -reportprogress|300|-2008|-work|work|./rtl/memory.vhd|
+Z42 !s107 ./rtl/memory.vhd|
+!i113 0
+R18
+R19
+Abehaviour
+R6
+R7
+R8
+R9
+R10
+Z43 DEx4 work 6 memory 0 22 ;idkFW_b5LFJo1:CWRd^22
+l39
+L31
+VWE>I71i@14BI1;LBV>dL90
+!s100 Qe^RI1Zh1[Z:BI<;;_iSG0
+R13
+33
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 0
+R18
+R19
+Eneuron
+Z44 w1701353777
+R7
+R6
+R8
+R9
+R10
+R0
+Z45 8./rtl/neuron.vhd
+Z46 F./rtl/neuron.vhd
+l0
+L8
+VFGzBPa;Q=kmDbEEBDL1zV2
+!s100 OJfCAjFl964om<8klGX]B2
+R13
+33
+R26
+!i10b 1
+R27
+Z47 !s90 -reportprogress|300|-2008|-work|work|./rtl/neuron.vhd|
+Z48 !s107 ./rtl/neuron.vhd|
+!i113 0
+R18
+R19
+Astructural
+R43
+R30
+R22
+R7
+R6
+R8
+R9
+R10
+Z49 DEx4 work 6 neuron 0 22 FGzBPa;Q=kmDbEEBDL1zV2
+l38
+L28
+V1CLbQ7:hSiXD?z@:EbELn2
+!s100 m7`VXQL5>hVMimj]AlT;C0
+R13
+33
+R26
+!i10b 1
+R27
+R47
+R48
+!i113 0
+R18
+R19
+Eneuron_tb
+Z50 w1701353942
+R7
+R6
+Z51 DPx4 ieee 17 fixed_float_types 0 22 j<WD5SZ6`I4KC;8P]h@_10
+R8
+Z52 DPx4 ieee 17 fixed_generic_pkg 0 22 Rl?j<5:i_L<aE9]<7A]V?0
+Z53 DPx4 ieee 9 fixed_pkg 0 22 c`b>2Shb`ic5KAcV=K;Co1
+R9
+R10
+R0
+Z54 8./tb/neuron_tb.vhd
+Z55 F./tb/neuron_tb.vhd
+l0
+L8
+V>a>fS_iJf@nZ52Jf@Tzeh3
+!s100 Jf5gjzOz__?PLK]]O[G_J1
+R13
+33
+Z56 !s110 1701356884
+!i10b 1
+Z57 !s108 1701356884.000000
+Z58 !s90 -reportprogress|300|-2008|-work|work|./tb/neuron_tb.vhd|
+Z59 !s107 ./tb/neuron_tb.vhd|
+!i113 0
+R18
+R19
+Abehavior
+R49
+R7
+R6
+R51
+R8
+R52
+R53
+R9
+R10
+DEx4 work 9 neuron_tb 0 22 >a>fS_iJf@nZ52Jf@Tzeh3
+l22
+L11
+VKF<fI0jj;fP^Q>k64@`KF3
+!s100 ^L5;Biao0NhFXIgCNMVkM3
+R13
+33
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 0
+R18
+R19
+Erelu
+Z60 w1701271007
+R6
+R7
+R8
+R9
+R10
+R0
+Z61 8./rtl/ReLu.vhd
+Z62 F./rtl/ReLu.vhd
+l0
+L6
+V^KSo[OCQ7JPC>llg;L>jj2
+!s100 GSEQ3imWklci2K24b:1YL1
+R13
+33
+Z63 !s110 1701356880
+!i10b 1
+Z64 !s108 1701356880.000000
+Z65 !s90 -reportprogress|300|-2008|-work|work|./rtl/ReLu.vhd|
+Z66 !s107 ./rtl/ReLu.vhd|
+!i113 0
+R18
+R19
+Abehaviour
+R6
+R7
+R8
+R9
+R10
+DEx4 work 4 relu 0 22 ^KSo[OCQ7JPC>llg;L>jj2
+l15
+L14
+V;ThzPb^Y<<P_=bTz;kNYo1
+!s100 J=Ql:ZFThhe4KFTH_W2UW1
+R13
+33
+R63
+!i10b 1
+R64
+R65
+R66
+!i113 0
+R18
+R19
+Esigmoid
+Z67 w1701270997
+R6
+R7
+R8
+R9
+R10
+R0
+Z68 8./rtl/Sigmoid.vhd
+Z69 F./rtl/Sigmoid.vhd
+l0
+L6
+Vcc][5><8DLhi:]2=0TAl>1
+!s100 nhRld5A5Xm:E296?VaSz12
+R13
+33
+Z70 !s110 1701356881
+!i10b 1
+Z71 !s108 1701356881.000000
+Z72 !s90 -reportprogress|300|-2008|-work|work|./rtl/Sigmoid.vhd|
+Z73 !s107 ./rtl/Sigmoid.vhd|
+!i113 0
+R18
+R19
+Abehavioral
+R6
+R7
+R8
+R9
+R10
+R21
+l16
+L14
+VFY9Vj^@_n0eFBcjS=d7B_3
+!s100 imK4R^WR@;2HcEZanG0ef1
+R13
+33
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 0
+R18
+R19
+Estep
+Z74 w1701270932
+R6
+R7
+R51
+R52
+R53
+R8
+R9
+R10
+R0
+Z75 8./rtl/Step.vhd
+Z76 F./rtl/Step.vhd
+l0
+L7
+V>d1fj=fz;a<G09E@9YhD>1
+!s100 nQiLQ[n6kXZcgi0<Q`5<g1
+R13
+33
+R70
+!i10b 1
+R64
+Z77 !s90 -reportprogress|300|-2008|-work|work|./rtl/Step.vhd|
+Z78 !s107 ./rtl/Step.vhd|
+!i113 0
+R18
+R19
+Abehaviour
+R6
+R7
+R51
+R52
+R53
+R8
+R9
+R10
+DEx4 work 4 step 0 22 >d1fj=fz;a<G09E@9YhD>1
+l18
+L15
+VZ_z3z1O5GY969JeX=AVXl2
+!s100 DgNJ7za:_7Fffc_Fg4Pi^0
+R13
+33
+R70
+!i10b 1
+R64
+R77
+R78
+!i113 0
+R18
+R19
+Ptypes
+R6
+R8
+R9
+R10
+w1701356856
+R0
+8./rtl/types.vhd
+F./rtl/types.vhd
+l0
+L7
+Vkz69YPVEf;>M^=Y=5<;921
+!s100 <U3bhP0nADbha_oaP6;kP0
+R13
+33
+R39
+!i10b 1
+R40
+!s90 -reportprogress|300|-2008|-work|work|./rtl/types.vhd|
+!s107 ./rtl/types.vhd|
+!i113 0
+R18
+R19

@@ -1,0 +1,23 @@
+F:/Verilog_file/lab3_origin/instructions.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/lab3_origin/instructions.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+
+Top level modules:
+	--none--
+
+} {} {}} F:/Verilog_file/lab3_origin/FSM_tb_1332_origin.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/lab3_origin/FSM_tb_1332_origin.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module FSM_TB
+-- Compiling program fsm_prog_tb
+
+Top level modules:
+	FSM_TB
+
+} {} {}} F:/Verilog_file/lab3_origin/FSM_skeleton.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/lab3_origin/FSM_skeleton.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package FSM_skeleton_sv_unit
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}}

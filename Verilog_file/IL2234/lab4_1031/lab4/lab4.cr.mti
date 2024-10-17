@@ -1,0 +1,64 @@
+F:/Verilog_file/IL2234/lab4_1031/lab4/instructions.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/instructions.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+
+Top level modules:
+	--none--
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/ROM.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/ROM.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module microprocessor
+
+Top level modules:
+	microprocessor
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/FSM_skeleton.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/FSM_skeleton.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package FSM_skeleton_sv_unit
+-- Compiling module FSM
+
+Top level modules:
+	FSM
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/ALU_up.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/ALU_up.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/SRAM.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/SRAM.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module SRAM
+
+Top level modules:
+	SRAM
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor_n_memory.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor_n_memory.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module microprocessor_n_memory
+
+Top level modules:
+	microprocessor_n_memory
+
+} {} {}} F:/Verilog_file/IL2234/lab4_origin/micpro_tb.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_origin/micpro_tb.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module micpro_tb
+
+Top level modules:
+	micpro_tb
+
+} {} {}} F:/Verilog_file/IL2234/lab4_1031/lab4/RF.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2234/lab4_1031/lab4/RF.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}}

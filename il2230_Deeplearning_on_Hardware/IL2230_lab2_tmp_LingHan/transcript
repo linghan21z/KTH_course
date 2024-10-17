@@ -1,0 +1,186 @@
+# ** Warning: License feature 'msimviewer' will expire today.
+ls
+# command.log
+# default.svf
+# exe
+# modelsim.ini
+# phy
+# rtl
+# syn
+# synopsys_dc.setup
+# tb
+# transcript
+# vlog.opt
+# vsim.wlf
+# work
+source tb/simulation.tcl
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:07:59 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling package types
+# End time: 16:07:59 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:07:59 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity memory
+# -- Compiling architecture behaviour of memory
+# End time: 16:07:59 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:00 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/ReLu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity ReLu
+# -- Compiling architecture behaviour of ReLu
+# End time: 16:08:00 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:00 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/Step.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package instance fixed_pkg
+# -- Loading package fixed_float_types
+# -- Loading package fixed_generic_pkg
+# -- Loading package MATH_REAL
+# -- Loading package body fixed_generic_pkg
+# -- Loading package types
+# -- Compiling entity Step
+# -- Compiling architecture behaviour of Step
+# End time: 16:08:01 on Nov 30,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:01 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/Sigmoid.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity Sigmoid
+# -- Compiling architecture Behavioral of Sigmoid
+# End time: 16:08:01 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:02 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/mac.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity MAC
+# -- Compiling architecture behaviour of MAC
+# End time: 16:08:02 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:02 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/arithmetic_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity arithmetic_unit
+# -- Compiling architecture behaviour of arithmetic_unit
+# -- Loading entity Sigmoid
+# -- Loading entity MAC
+# End time: 16:08:02 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:03 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fsm
+# -- Compiling architecture behavioral of fsm
+# End time: 16:08:03 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:03 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./rtl/neuron.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity neuron
+# -- Compiling architecture structural of neuron
+# -- Loading entity arithmetic_unit
+# -- Loading entity fsm
+# -- Loading entity memory
+# End time: 16:08:03 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.7c Compiler 2018.08 Aug 17 2018
+# Start time: 16:08:04 on Nov 30,2023
+# vcom -reportprogress 300 -2008 -work work ./tb/neuron_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package instance fixed_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package fixed_float_types
+# -- Loading package fixed_generic_pkg
+# -- Loading package MATH_REAL
+# -- Loading package body fixed_generic_pkg
+# -- Loading package types
+# -- Compiling entity neuron_tb
+# -- Compiling architecture behavior of neuron_tb
+# -- Loading entity neuron
+# End time: 16:08:04 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.neuron_tb 
+# Start time: 16:08:05 on Nov 30,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "fsm(behavioral)".
+# ** Warning: License feature 'msimhdlsim' will expire today.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.fixed_float_types
+# Loading ieee.math_real(body)
+# Loading ieee.fixed_generic_pkg(body)
+# Loading ieee.fixed_pkg
+# Loading work.types
+# Loading work.neuron_tb(behavior)#1
+# Loading work.neuron(structural)#1
+# Loading work.arithmetic_unit(behaviour)#1
+# Loading work.sigmoid(behavioral)#1
+# Loading work.mac(behaviour)#1
+# Loading work.fsm(behavioral)#1
+# Loading work.memory(behaviour)#1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /neuron_tb/NEURON_1/MEMORY_1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /neuron_tb/NEURON_1/MEMORY_1
+quit
+# End time: 16:10:16 on Nov 30,2023, Elapsed time: 0:02:11
+# Errors: 0, Warnings: 2

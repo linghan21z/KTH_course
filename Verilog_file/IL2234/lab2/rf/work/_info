@@ -1,0 +1,69 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Questasim/examples
+T_opt
+!s110 1697821261
+VDd;SX7XFkeQT3^Q[Xe5Jb0
+04 5 4 work RF_TB fast 0
+=1-5c80b6c79110-6532b24d-2b4-5674
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vRF
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1697821251
+!i10b 1
+!s100 `nk>LT;mG>iMZ1J4ZkGh`2
+IZV^Zl?h=7_h]>RJX9:QLT3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 RF_sv_unit
+S1
+Z4 dF:/Verilog_file/lab2/rf
+w1697230838
+8F:/Verilog_file/lab2/rf/RF.sv
+FF:/Verilog_file/lab2/rf/RF.sv
+L0 2
+Z5 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z6 !s108 1697821251.000000
+!s107 F:/Verilog_file/lab2/rf/RF.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab2/rf/RF.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@r@f
+vRF_TB
+R1
+R2
+!i10b 1
+!s100 CgaO82VJ7WfikbQZ8?Tf:2
+I2aAl=CHeP8:CFZ3`Icgn71
+R3
+!s105 RF_tb_sv_unit
+S1
+R4
+w1697821248
+8F:/Verilog_file/lab2/rf/RF_tb.sv
+FF:/Verilog_file/lab2/rf/RF_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 F:/Verilog_file/lab2/rf/RF_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab2/rf/RF_tb.sv|
+!i113 0
+R7
+R0
+n@r@f_@t@b

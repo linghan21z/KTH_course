@@ -1,0 +1,149 @@
+# Set output size along x and y:
+LIU		Rx, #3838 #x_size - 2;
+LIU		Ry, #1078 #y_size - 2;
+
+# Set row stride for original image and result:
+LIU		R1, #15360	; # row stride of the original image = 3840*4
+LIU		R2, #15352	; # row stride of the result = 3838*4
+
+# Strip-mined:
+MODU	R4, Rx, #32		; 
+DIVU	Ri, Rx, #32		;
+ADDIU	Ri, Ri, #1	    ;
+
+# Load kernel:
+L.S		F0, 0(Rk_x)   ;
+L.S		F1, 4(Rk_x)   ;
+L.S		F2, 8(Rk_x)   ;
+L.S		F3, 12(Rk_x)  ;
+L.S		F4, 16(Rk_x)  ;
+L.S		F5, 20(Rk_x)  ;
+L.S		F6, 24(Rk_x)  ;
+L.S		F7, 28(Rk_x)  ;
+L.S		F8, 32(Rk_x)  ;
+L.S		F9, 36(Rk_y)   ;
+L.S		F10, 40(Rk_y)   ;
+L.S		F11, 44(Rk_y)   ;
+L.S		F12, 48(Rk_y)  ;
+L.S		F13, 52(Rk_y)  ;
+L.S		F14, 56(Rk_y)  ;
+L.S		F15, 60(Rk_y)  ;
+L.S		F16, 64(Rk_y)  ;
+L.S		F17, 68(Rk_y)  ;
+
+# Set F19 to #threshold
+L.S		F19, #threshold;
+
+Loop_i:
+MTC1	VLR, R4		;
+# Get address of the current pixel and target address
+ADDIU	Rt1, Rimage, $0	;
+ADDIU   Rt2, Redge, $0	;
+# Load 3 vectors of the first rows(offset by 1 pixel)
+LV.S	V0, 0(Rt1)  ;
+# V9 stores the output of pixel_value_x
+# V10 stores the output of pixel_value_y
+
+# V11, V12 stores the temporary vectors
+
+# Loop of kernel operation unrolled so we don't load vectors repeatedly 
+MULVSD.S	V9, V0, F0;
+MULVSD.S	V10, V0, F9;
+LV.S	V1, 4(Rt1)  ;
+MULVSD.S	V11, V1, F1;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V1, F10;
+ADDVDD.S	V10, V10, V12;
+LV.S	V2, 8(Rt1)  ;
+MULVSD.S	V11, V2, F2;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V2, F11;
+ADDVDD.S	V10, V10, V12;
+ADDIU	Rt1, Rt1, R1;
+# Load 3 vectors of the second rows(offset by 1 pixel)
+LV.S	V3, 0(Rt1)  ;
+MULVSD.S	V11, V3, F3;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V3, F12;
+ADDVDD.S	V10, V10, V12;
+LV.S	V4, 4(Rt1)  ;
+MULVSD.S	V11, V4, F4;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V4, F13;
+ADDVDD.S	V10, V10, V12;
+LV.S	V5, 8(Rt1)  ;
+MULVSD.S	V11, V5, F5;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V5, F14;
+ADDVDD.S	V10, V10, V12;
+
+# Initial iterator of inner loop
+LIU		Rj, #1078  ;
+
+Loop_j:
+ADDIU	Rt1, Rt1, R1;
+LV.S	V6, 0(Rt1)  ;
+MULVSD.S	V11, V6, F6;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V6, F15;
+ADDVDD.S	V10, V10, V12;
+LV.S	V7, 4(Rt1)  ;
+MULVSD.S	V11, V7, F7;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V7, F16;
+ADDVDD.S	V10, V10, V12;
+LV.S	V8, 8(Rt1)  ;
+MULVSD.S	V11, V8, F8;
+ADDVDD.S	V9, V9, V11;
+MULVSD.S	V12, V8, F17;
+ADDVDD.S	V10, V10, V12;
+
+# Now V11 is pixel_value_x and V12 is pixel_value_y
+
+# Calculate the absolute value
+SLTVS.S		V11, $0	 ;
+SUBSV.S     V11, $0, F11;
+
+SLTVS.S		V12, $0	 ;
+SUBSV.S     V12, $0, F12;
+
+# Reset all the masks
+CVM;
+
+# Calculate the pixel value
+ADDVDD.S	V11, V11, V12;
+
+# Normalize pixel value:
+# Get the elements that is larger than the threshold
+SGTVS.S		V11, F19;
+# Set the elements exceeded threshold to 0
+SUBVV.S		V11, V11, V11;
+# Set the elements exceeded threshold to 255
+ADDVS.S		V11, V11, #255;
+
+# Reset all the masks
+CVM;
+
+# Store the result and update the target address
+SV.S	V11, Rt2;
+ADDIU	Rt2, Rt2, R2;
+
+# Upshift the vectors been loaded
+# Avoid loading it again
+ADDVDS.S	V0, V3, $0;
+ADDVDS.S	V1, V4, $0;
+ADDVDS.S	V2, V5, $0;
+ADDVDS.S	V3, V6, $0;
+ADDVDS.S	V4, V7, $0;
+ADDVDS.S	V5, V8, $0;
+
+SUBIU	Rj, Rj, #1;
+BNEZ	Rj, Loop_j;
+
+# Inner loop j ended, update the state of outer loop
+MULIU	Rt, R4, #4;
+ADDIU	Rimage, Rimage, Rt	;
+ADDIU	Redge, Redge, Rt	;
+LIU		R4, #32		;
+SUBIU	Ri, Ri, #1	;
+BNEZ	Ri, Loop_i;

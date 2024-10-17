@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Questasim/examples
+T_opt
+!s110 1718014359
+VV`=9LeF_1ac^anB6IVni=1
+04 6 4 work FSM_TB fast 0
+=1-5c80b6c79110-6666d195-d9-1f98
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vFSM
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 20 FSM_skeleton_sv_unit 0 22 ]9gRo74AGd0AO`Rk;`BKT0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^NG3<ZgNbN7l>^47ej@=b0
+IWA@N>h_W0jhS[SQO4?4UC3
+!s105 FSM_skeleton_sv_unit
+S1
+Z3 dF:/Verilog_file/IL2234/lab3
+Z4 w1698746205
+Z5 8F:/Verilog_file/IL2234/lab3/FSM_skeleton.sv
+Z6 FF:/Verilog_file/IL2234/lab3/FSM_skeleton.sv
+L0 32
+Z7 OL;L;10.6c;65
+Z8 !s108 1718014336.000000
+Z9 !s107 instructions.sv|F:/Verilog_file/IL2234/lab3/FSM_skeleton.sv|
+Z10 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab3/FSM_skeleton.sv|
+!i113 0
+Z11 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@f@s@m
+XFSM_skeleton_sv_unit
+R1
+V]9gRo74AGd0AO`Rk;`BKT0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ZndCPinAQJmo<Uhg:[M271
+I]9gRo74AGd0AO`Rk;`BKT0
+!i103 1
+S1
+R3
+R4
+R5
+R6
+Z12 Finstructions.sv
+Z13 L0 28
+R7
+R8
+R9
+R10
+!i113 0
+R11
+R0
+n@f@s@m_skeleton_sv_unit
+vFSM_TB
+R1
+Z14 !s110 1718014336
+!i10b 1
+!s100 nAe_Z9GZbRD7M`mJH^GIf1
+IdadTAz5<>]1^E@K2G3_Ia2
+R2
+!s105 FSM_tb_1332_sv_unit
+S1
+R3
+w1698710455
+8F:/Verilog_file/IL2234/lab3/FSM_tb_1332.sv
+FF:/Verilog_file/IL2234/lab3/FSM_tb_1332.sv
+R12
+L0 30
+R7
+r1
+!s85 0
+31
+R8
+!s107 instructions.sv|F:/Verilog_file/IL2234/lab3/FSM_tb_1332.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab3/FSM_tb_1332.sv|
+!i113 0
+R11
+R0
+n@f@s@m_@t@b
+Xinstructions_sv_unit
+R1
+R14
+!i10b 1
+!s100 zdXeNc2460NljS6J>JGBJ3
+InIOI71Umkj<i7Rd;R5W3U1
+VnIOI71Umkj<i7Rd;R5W3U1
+!i103 1
+S1
+R3
+w1698494218
+8F:/Verilog_file/IL2234/lab3/instructions.sv
+FF:/Verilog_file/IL2234/lab3/instructions.sv
+R13
+R7
+r1
+!s85 0
+31
+R8
+!s107 F:/Verilog_file/IL2234/lab3/instructions.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab3/instructions.sv|
+!i113 0
+R11
+R0

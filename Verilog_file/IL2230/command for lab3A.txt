@@ -1,0 +1,73 @@
+#Remove all Design
+remove_design -all
+
+# load synopsys config
+source ../../synopsys_dc.setup
+
+#/* compile each subblock independently */
+
+read_file -format sverilog -lib WORK {"../rtl/types_and_constants.vhd"}
+
+#Compile DELAY_LINE_1
+read_file -format vhdl -lib WORK {"../rtl/delay_line.vhd"}
+current_design delay_line
+link
+uniquify
+source ../syn/serial_fir_constraints.sdc 
+source ../syn/db/delay_line.wscr
+compile
+
+#Compile FSM_1
+#read_file -format vhdl -lib WORK {"../rtl/types_and_constants.vhd"}
+read_file -format vhdl -lib WORK {"../rtl/fsm.vhd"}
+current_design fsm
+link
+uniquify
+source ../syn/serial_fir_constraints.sdc
+source ../syn/db/fsm.wscr
+compile
+
+#Compile ARITHMETIC_UNIT_1
+#read_file -format vhdl -lib WORK {"./rtl/types_and_constants.vhd"}
+read_file -format vhdl -lib WORK {"../rtl/mac.vhd"}
+read_file -format vhdl -lib WORK {"../rtl/arithmetic_unit.vhd"}
+current_design arithmetic_unit
+link
+uniquify
+source ../syn/serial_fir_constraints.sdc 
+source ../syn/db/arithmetic_unit.wscr
+compile
+
+#compile FIR toplevel
+#read_file -format vhdl -lib WORK {"../rtl/Step.vhd"}
+#read_file -format vhdl -lib WORK {"../rtl/ReLu.vhd"}
+read_file -format vhdl -lib WORK {"../rtl/Sigmoid.vhd"}
+read_file -format vhdl -lib WORK {"../rtl/serial_fir.vhd"}
+current_design serial_fir
+link
+source ../syn/serial_fir_constraints.sdc
+
+#check if the constraints are met
+report_constraint
+#report_area
+#report_power
+#report_timing
+report_area > ../syn/rpt/serial_area.txt
+report_power > ../syn/rpt/serial_power.txt
+report_timing > ../syn/rpt/serial_timing.txt
+
+#Characterize all the blocks
+characterize -constraint {ARITHMETIC_UNIT_1  FSM_1  DELAY_LINE_1}
+
+#Save new constraints
+current_design fsm
+write_script > ../syn/db/fsm.wscr
+
+current_design arithmetic_unit
+write_script > ../syn/db/arithmetic_unit.wscr
+
+current_design delay_line
+write_script > ../syn/db/delay_line.wscr
+
+current_design serial_fir
+write_script > ../syn/db/serial_fir.wscr

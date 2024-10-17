@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Questasim/examples
+T_opt
+!s110 1697671293
+VnUL=5nVeR2k8WnIcYeE>H2
+04 6 4 work hw4_2p fast 0
+=1-5c80b6c79110-6530687d-121-5bb8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vhw4_2p
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1697671280
+!i10b 1
+!s100 cImCc@9NYljHze1YdjfS>3
+IJ`]@zI3GHe>YIl^So51DL1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 _2p_sv_unit
+S1
+dF:/Verilog_file/homework4/HW4_2P
+w1697671221
+8F:/Verilog_file/homework4/HW4_2P/2p.sv
+FF:/Verilog_file/homework4/HW4_2P/2p.sv
+L0 5
+OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1697671280.000000
+!s107 F:/Verilog_file/homework4/HW4_2P/2p.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/homework4/HW4_2P/2p.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0

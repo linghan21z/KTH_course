@@ -1,0 +1,15 @@
+F:/Verilog_file/homework3/HW3_2P/hw3_2p_tb.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/homework3/HW3_2P/hw3_2p_tb.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module fsmd_calculator_tb
+
+Top level modules:
+	fsmd_calculator_tb
+
+} {} {}} F:/Verilog_file/homework3/HW3_2P/hw3_2p.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/homework3/HW3_2P/hw3_2p.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module fsmd_calculator
+
+Top level modules:
+	fsmd_calculator
+
+} {} {}}

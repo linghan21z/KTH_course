@@ -1,0 +1,22 @@
+student@il2206:/media/sf_lab_file/skeletons-ada$ sudo taskset -c 0 ./rms
+Task 1- Release:  0.100, Completion:  0.204, Response: 0.104, WCRT: 0.104, Next Release:  0.400
+Task 2- Release:  0.100, Completion:  0.297, Response: 0.197, WCRT: 0.197, Next Release:  0.500
+Task 3- Release:  0.100, Completion:  0.392, Response: 0.292, WCRT: 0.292, Next Release:  0.700
+Task 1- Release:  0.400, Completion:  0.492, Response: 0.092, WCRT: 0.104, Next Release:  0.700
+Task 2- Release:  0.500, Completion:  0.593, Response: 0.093, WCRT: 0.197, Next Release:  0.900
+Task 1- Release:  0.700, Completion:  0.796, Response: 0.096, WCRT: 0.104, Next Release:  1.000
+Task 3- Release:  0.700, Completion:  0.891, Response: 0.191, WCRT: 0.292, Next Release:  1.300
+Task 2- Release:  0.900, Completion:  0.993, Response: 0.093, WCRT: 0.197, Next Release:  1.300
+Task 1- Release:  1.000, Completion:  1.093, Response: 0.093, WCRT: 0.104, Next Release:  1.300
+Task 1- Release:  1.300, Completion:  1.395, Response: 0.095, WCRT: 0.104, Next Release:  1.600
+Task 2- Release:  1.300, Completion:  1.489, Response: 0.189, WCRT: 0.197, Next Release:  1.700
+Task 3- Release:  1.300, Completion:  1.585, Response: 0.285, WCRT: 0.292, Next Release:  1.900
+Task 1- Release:  1.600, Completion:  1.699, Response: 0.099, WCRT: 0.104, Next Release:  1.900
+Task 2- Release:  1.700, Completion:  1.793, Response: 0.093, WCRT: 0.197, Next Release:  2.100
+Task 1- Release:  1.900, Completion:  2.003, Response: 0.103, WCRT: 0.104, Next Release:  2.200
+Task 3- Release:  1.900, Completion:  2.098, Response: 0.198, WCRT: 0.292, Next Release:  2.500
+Task 2- Release:  2.100, Completion:  2.196, Response: 0.096, WCRT: 0.197, Next Release:  2.500
+Task 1- Release:  2.200, Completion:  2.293, Response: 0.093, WCRT: 0.104, Next Release:  2.500
+Task 1- Release:  2.500, Completion:  2.597, Response: 0.097, WCRT: 0.104, Next Release:  2.800
+Task 2- Release:  2.500, Completion:  2.692, Response: 0.192, WCRT: 0.197, Next Release:  2.900
+Task 3- Release:  2.500, Completion:  2.786, Response: 0.286, WCRT: 0.292, Next Release:  3.100

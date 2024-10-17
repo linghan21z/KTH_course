@@ -1,0 +1,265 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Questasim/examples
+T_opt
+!s110 1705616919
+VUfN4WUm[4_doQ<@7Z``zM1
+04 9 4 work micpro_tb fast 0
+=1-5c80b6c79110-65a9a615-219-5120
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vALU
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1705616892
+!i10b 1
+!s100 oZ2Mmjh@X3H^3PdVkkXVo1
+I?CClR[HMmSjmV6DBBh7060
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_up_sv_unit
+S1
+Z3 dF:/Verilog_file/IL2234/lab4_1031/lab4
+w1697237416
+8F:/Verilog_file/IL2234/lab4_1031/lab4/ALU_up.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/ALU_up.sv
+L0 2
+Z4 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z5 !s108 1705616892.000000
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/ALU_up.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/ALU_up.sv|
+!i113 0
+Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@a@l@u
+vFSM
+R1
+DXx4 work 20 FSM_skeleton_sv_unit 0 22 L?K@=D=DBaO76@k<o:TA?1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^NG3<ZgNbN7l>^47ej@=b0
+IV:d66SRgHWSLGA6AL@EBG1
+!s105 FSM_skeleton_sv_unit
+S1
+R3
+Z7 w1698710572
+Z8 8F:/Verilog_file/IL2234/lab4_1031/lab4/FSM_skeleton.sv
+Z9 FF:/Verilog_file/IL2234/lab4_1031/lab4/FSM_skeleton.sv
+L0 32
+R4
+R5
+Z10 !s107 instructions.sv|F:/Verilog_file/IL2234/lab4_1031/lab4/FSM_skeleton.sv|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/FSM_skeleton.sv|
+!i113 0
+R6
+R0
+n@f@s@m
+XFSM_skeleton_sv_unit
+R1
+VL?K@=D=DBaO76@k<o:TA?1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ZndCPinAQJmo<Uhg:[M271
+IL?K@=D=DBaO76@k<o:TA?1
+!i103 1
+S1
+R3
+R7
+R8
+R9
+Finstructions.sv
+Z12 L0 28
+R4
+R5
+R10
+R11
+!i113 0
+R6
+R0
+n@f@s@m_skeleton_sv_unit
+Xinstructions_sv_unit
+R1
+Z13 !s110 1705616893
+!i10b 1
+!s100 zdXeNc2460NljS6J>JGBJ3
+I@G_BO<;^`S6H7TfZg3X?g2
+V@G_BO<;^`S6H7TfZg3X?g2
+!i103 1
+S1
+R3
+w1698490620
+8F:/Verilog_file/IL2234/lab4_1031/lab4/instructions.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/instructions.sv
+R12
+R4
+r1
+!s85 0
+31
+R5
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/instructions.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/instructions.sv|
+!i113 0
+R6
+R0
+vmicpro_tb
+R1
+R13
+!i10b 1
+!s100 n^E]GC^a^344n_R6`@aB[1
+I6@@aI[R0XNcj:<gKM;UQC1
+R2
+!s105 micpro_tb_sv_unit
+S1
+R3
+w1698507763
+8F:/Verilog_file/IL2234/lab4_origin/micpro_tb.sv
+FF:/Verilog_file/IL2234/lab4_origin/micpro_tb.sv
+R12
+R4
+r1
+!s85 0
+31
+Z14 !s108 1705616893.000000
+!s107 F:/Verilog_file/IL2234/lab4_origin/micpro_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_origin/micpro_tb.sv|
+!i113 0
+R6
+R0
+vmicroprocessor
+R1
+R13
+!i10b 1
+!s100 W;@4cN1AeX0ZJj9D73A_C0
+IbfLW>2hzZ@8?bbC>cmKkN1
+R2
+!s105 microprocessor_sv_unit
+S1
+R3
+w1698704924
+8F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor.sv
+R12
+R4
+r1
+!s85 0
+31
+R14
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor.sv|
+!i113 0
+R6
+R0
+vmicroprocessor_n_memory
+R1
+R13
+!i10b 1
+!s100 df?D1bbFKnPSf3CU3MO`>2
+Ic<64E2Si5RERKnkI[eF<:1
+R2
+!s105 microprocessor_n_memory_sv_unit
+S1
+R3
+w1698703714
+8F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor_n_memory.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor_n_memory.sv
+R12
+R4
+r1
+!s85 0
+31
+R14
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor_n_memory.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/microprocessor_n_memory.sv|
+!i113 0
+R6
+R0
+vRF
+R1
+R13
+!i10b 1
+!s100 [?imAmKd@a@HaHOOzIZVg3
+I0AlIJhA45Jf@]H3K`I;AP1
+R2
+!s105 RF_sv_unit
+S1
+R3
+w1698703164
+8F:/Verilog_file/IL2234/lab4_1031/lab4/RF.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/RF.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/RF.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/RF.sv|
+!i113 0
+R6
+R0
+n@r@f
+vROM
+R1
+R13
+!i10b 1
+!s100 @=We_3?h:J8YNnz]YL7X12
+I`fdj;R9Y23fh]Xm^aN9LZ1
+R2
+!s105 ROM_sv_unit
+S1
+R3
+w1698709666
+8F:/Verilog_file/IL2234/lab4_1031/lab4/ROM.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/ROM.sv
+R12
+R4
+r1
+!s85 0
+31
+R14
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/ROM.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/ROM.sv|
+!i113 0
+R6
+R0
+n@r@o@m
+vSRAM
+R1
+R13
+!i10b 1
+!s100 4aQ]W0=JzELoA6ATL5><53
+IJlGN=2=7H_A8Kd;Hl5bM_0
+R2
+!s105 SRAM_sv_unit
+S1
+R3
+w1698689022
+8F:/Verilog_file/IL2234/lab4_1031/lab4/SRAM.sv
+FF:/Verilog_file/IL2234/lab4_1031/lab4/SRAM.sv
+R12
+R4
+r1
+!s85 0
+31
+R14
+!s107 F:/Verilog_file/IL2234/lab4_1031/lab4/SRAM.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2234/lab4_1031/lab4/SRAM.sv|
+!i113 0
+R6
+R0
+n@s@r@a@m

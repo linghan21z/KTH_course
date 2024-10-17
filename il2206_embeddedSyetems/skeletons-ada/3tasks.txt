@@ -1,0 +1,13 @@
+sudo taskset -c 0 ./rms
+Task 1- Release:  0.100, Completion:  0.199, Response: 0.099, WCRT: 0.099, Next Release:  0.400
+Task 2- Release:  0.100, Completion:  0.292, Response: 0.192, WCRT: 0.192, Next Release:  0.500
+Task 3- Release:  0.100, Completion:  0.379, Response: 0.279, WCRT: 0.279, Next Release:  0.700
+Task 1- Release:  0.400, Completion:  0.483, Response: 0.083, WCRT: 0.099, Next Release:  0.700
+Task 2- Release:  0.500, Completion:  0.573, Response: 0.073, WCRT: 0.192, Next Release:  0.900
+Task 1- Release:  0.700, Completion:  0.782, Response: 0.082, WCRT: 0.099, Next Release:  1.000
+Task 3- Release:  0.700, Completion:  0.856, Response: 0.156, WCRT: 0.279, Next Release:  1.300
+Task 2- Release:  0.900, Completion:  0.973, Response: 0.073, WCRT: 0.192, Next Release:  1.300
+Task 1- Release:  1.000, Completion:  1.072, Response: 0.072, WCRT: 0.099, Next Release:  1.300
+Task 1- Release:  1.300, Completion:  1.380, Response: 0.080, WCRT: 0.099, Next Release:  1.600
+Task 2- Release:  1.300, Completion:  1.452, Response: 0.152, WCRT: 0.192, Next Release:  1.700
+Task 3- Release:  1.300, Completion:  1.526, Response: 0.226, WCRT: 0.279, Next Release:  1.900

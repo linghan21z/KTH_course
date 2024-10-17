@@ -1,0 +1,81 @@
+###################################################################
+
+# Created by write_script -format dctcl on Thu Nov 30 16:12:39 2023
+
+###################################################################
+
+# Set the current_design #
+current_design fsm
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+set_operating_conditions NCCOM -library tcbn90gtc
+set_wire_load_mode segmented
+set_wire_load_selection_group WireAreaForZero
+set_multibit_options -mode non_timing_driven
+set_local_link_library {tcbn90gtc.db}
+set_connection_class "default" [get_ports nrst]
+set_connection_class "default" [get_ports clk]
+set_connection_class "default" [get_ports new_input]
+set_connection_class "default" [get_ports write_enable]
+set_connection_class "default" [get_ports {read_address[1]}]
+set_connection_class "default" [get_ports {read_address[0]}]
+set_connection_class "default" [get_ports output_ready]
+set_connection_class "default" [get_ports nrst_mac]
+set_fanout_load 0 [get_ports write_enable]
+set_fanout_load 3 [get_ports {read_address[1]}]
+set_fanout_load 3 [get_ports {read_address[0]}]
+set_fanout_load 5 [get_ports output_ready]
+set_fanout_load 18 [get_ports nrst_mac]
+set_load -pin_load 0.0522 [get_ports nrst]
+set_load -pin_load 0.0288 [get_ports clk]
+set_load -pin_load 0.0058 [get_ports {read_address[1]}]
+set_load -pin_load 0.0058 [get_ports {read_address[0]}]
+set_load -pin_load 0.0055 [get_ports output_ready]
+set_load -pin_load 0.0198 [get_ports nrst_mac]
+set_max_transition 0.712 [get_ports nrst]
+set_max_transition 0.712 [get_ports {read_address[1]}]
+set_max_transition 0.712 [get_ports {read_address[0]}]
+set_max_transition 0.712 [get_ports output_ready]
+set_max_transition 0.712 [get_ports nrst_mac]
+create_clock [get_ports clk]  -period 2.5  -waveform {0 1.25}
+create_clock -name port_clock_virtual1  -period 2.5  -waveform {0 1.25}
+group_path -default  -to [get_clocks port_clock_virtual1]
+set_false_path   -from [get_clocks port_clock_virtual1]
+set_input_delay -clock clk  -rise 0  [get_ports clk]
+set_input_delay -clock clk  -clock_fall  -fall 0  -add_delay  [get_ports clk]
+set_input_delay 0  [get_ports new_input]
+set_input_delay -clock port_clock_virtual1  0  [get_ports nrst]
+set_output_delay -clock clk  -max -rise 0.10033  [get_ports nrst_mac]
+set_output_delay -clock clk  -max -fall 0.0937102  [get_ports nrst_mac]
+set_output_delay -clock clk  -min -rise 0.0786856  [get_ports nrst_mac]
+set_output_delay -clock clk  -min -fall 0.0633672  [get_ports nrst_mac]
+set_output_delay -max -rise 0.0510616  [get_ports output_ready]
+set_output_delay -max -fall 0.0630722  [get_ports output_ready]
+set_output_delay -min 0  [get_ports output_ready]
+set_output_delay -max -rise 2.33346  [get_ports {read_address[0]}]
+set_output_delay -max -fall 2.3179  [get_ports {read_address[0]}]
+set_output_delay -min -rise 0.688102  [get_ports {read_address[0]}]
+set_output_delay -min -fall 0.69767  [get_ports {read_address[0]}]
+set_output_delay -clock clk  -max -rise 2.01322  -add_delay  [get_ports        \
+{read_address[0]}]
+set_output_delay -clock clk  -max -fall 1.99765  -add_delay  [get_ports        \
+{read_address[0]}]
+set_output_delay -clock clk  -min -rise 0.410202  -add_delay  [get_ports       \
+{read_address[0]}]
+set_output_delay -clock clk  -min -fall 0.455316  -add_delay  [get_ports       \
+{read_address[0]}]
+set_output_delay -max -rise 2.3323  [get_ports {read_address[1]}]
+set_output_delay -max -fall 2.31497  [get_ports {read_address[1]}]
+set_output_delay -min -rise 0.689297  [get_ports {read_address[1]}]
+set_output_delay -min -fall 0.701244  [get_ports {read_address[1]}]
+set_output_delay -clock clk  -max -rise 2.01205  -add_delay  [get_ports        \
+{read_address[1]}]
+set_output_delay -clock clk  -max -fall 1.99473  -add_delay  [get_ports        \
+{read_address[1]}]
+set_output_delay -clock clk  -min -rise 0.411398  -add_delay  [get_ports       \
+{read_address[1]}]
+set_output_delay -clock clk  -min -fall 0.45889  -add_delay  [get_ports        \
+{read_address[1]}]
+set compile_inbound_cell_optimization false
+set compile_inbound_max_cell_percentage 10.0
+1

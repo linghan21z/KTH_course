@@ -1,0 +1,9 @@
+types.vhd
+memory.vhd
+ReLu.vhd
+Step.vhd
+Sigmoid.vhd
+mac.vhd
+arithmetic_unit.vhd
+fsm.vhd
+neuron.vhd

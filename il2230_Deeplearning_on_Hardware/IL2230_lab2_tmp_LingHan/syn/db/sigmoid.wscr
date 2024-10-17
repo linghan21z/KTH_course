@@ -1,0 +1,16 @@
+###################################################################
+
+# Created by write_script -format dctcl on Wed Nov 29 22:29:11 2023
+
+###################################################################
+
+# Set the current_design #
+current_design Sigmoid
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+remove_wire_load_model
+set_multibit_options -mode non_timing_driven
+set_local_link_library {tcbn90gtc.db}
+set compile_inbound_cell_optimization false
+set compile_inbound_max_cell_percentage 10.0
+1

@@ -1,0 +1,5 @@
+Execution time for parameter 32: 0m1,690s 
+Execution time for parameter 64: 0m2,413s
+Execution time for parameter 128: 0m9,025s
+Execution time for parameter 256: 1m0,820s
+Execution time for parameter 512: 8m16,923s

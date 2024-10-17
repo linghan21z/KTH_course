@@ -1,0 +1,15 @@
+F:/Verilog_file/lab2/rf/RF_tb.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/lab2/rf/RF_tb.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module RF_TB
+
+Top level modules:
+	RF_TB
+
+} {} {}} F:/Verilog_file/lab2/rf/RF.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/lab2/rf/RF.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module RF
+
+Top level modules:
+	RF
+
+} {} {}}

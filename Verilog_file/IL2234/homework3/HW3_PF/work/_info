@@ -1,0 +1,91 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/Questasim/examples
+T_opt
+!s110 1696530787
+V^BZAgnG[1SIZ`T>Dg7j1A2
+04 15 4 work detect51_fsm_tb fast 0
+=1-5c80b6c79110-651f0163-5a-5cb0
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vdetect51_fsm
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1696530773
+!i10b 1
+!s100 :NFB@n4YQ>[DMeO5j=Ie:2
+I=?9468Ko0ShP]_;@KGNek0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 hw3_pf_sv_unit
+S1
+Z5 dF:/Verilog_file/homework3/HW3_PF
+w1696530766
+Z6 8F:/Verilog_file/homework3/HW3_PF/hw3_pf.sv
+Z7 FF:/Verilog_file/homework3/HW3_PF/hw3_pf.sv
+L0 4
+Z8 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z9 !s108 1696530773.000000
+Z10 !s107 F:/Verilog_file/homework3/HW3_PF/hw3_pf.sv|
+Z11 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/homework3/HW3_PF/hw3_pf.sv|
+!i113 0
+Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+vdetect51_fsm_tb
+R1
+R2
+!i10b 1
+!s100 W7M[R5?CLSKDP^;9ZUEFk2
+IJd3SBf^NO7GOYgWFgPh>@0
+R3
+!s105 hw3_pf_tb_sv_unit
+S1
+R5
+w1696530676
+8F:/Verilog_file/homework3/HW3_PF/hw3_pf_tb.sv
+FF:/Verilog_file/homework3/HW3_PF/hw3_pf_tb.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+!s107 F:/Verilog_file/homework3/HW3_PF/hw3_pf_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/homework3/HW3_PF/hw3_pf_tb.sv|
+!i113 0
+R12
+R0
+vdetected51_fsm
+R1
+!s110 1696282791
+!i10b 1
+!s100 ^ofF`h]`k6=z5C[JmPXhD3
+I0MhcHnMX:Cz<>W4Hf^5L93
+R3
+R4
+S1
+R5
+w1696282377
+R6
+R7
+L0 4
+R8
+r1
+!s85 0
+31
+!s108 1696282791.000000
+R10
+R11
+!i113 0
+R12
+R0

@@ -1,0 +1,85 @@
+F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory_N_neuron.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory_N_neuron.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module memory_N_neuron
+
+Top level modules:
+	memory_N_neuron
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_one_neuron.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_one_neuron.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module fsm_one_neuron
+
+Top level modules:
+	fsm_one_neuron
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module memory
+
+Top level modules:
+	memory
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/tb/MLP_testbench.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/tb/MLP_testbench.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module MLP_tb
+
+Top level modules:
+	MLP_tb
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_N_neuron.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_N_neuron.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module MLP_N_neuron
+
+Top level modules:
+	MLP_N_neuron
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_N_neurons.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_N_neurons.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module fsm_N_neuron
+
+Top level modules:
+	fsm_N_neuron
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/N_neurons.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/N_neurons.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module N_neurons
+
+Top level modules:
+	N_neurons
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fully_parallel.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fully_parallel.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module fully_parallel
+
+Top level modules:
+	fully_parallel
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_one_neuron.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_one_neuron.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module MLP_one_neuron
+
+Top level modules:
+	MLP_one_neuron
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/ReLU.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/ReLU.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module ReLU
+
+Top level modules:
+	ReLU
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/single_neuron.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/single_neuron.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module single_neuron
+
+Top level modules:
+	single_neuron
+
+} {} {}} F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MAC.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MAC.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module MAC
+
+Top level modules:
+	MAC
+
+} {} {}}

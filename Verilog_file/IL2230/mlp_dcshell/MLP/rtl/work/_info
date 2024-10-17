@@ -1,0 +1,316 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Questasim/examples
+T_opt
+!s110 1702396419
+Vl<ffK_@cMT<PSgcIWz:f72
+04 6 4 work MLP_tb fast 0
+=1-5c80b6c79110-65788203-215-2c40
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+R0
+vfsm_N_neuron
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1702396404
+!i10b 1
+!s100 YH`VLVz4UmGa2IUYMJXjl0
+IB5hF;aczIN^mL37VO[85P1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 fsm_N_neurons_sv_unit
+S1
+Z4 dF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl
+w1702218308
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_N_neurons.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_N_neurons.sv
+L0 1
+Z5 OL;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1702396404.000000
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_N_neurons.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_N_neurons.sv|
+!i113 0
+Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+nfsm_@n_neuron
+vfsm_one_neuron
+R2
+Z7 !s110 1702396405
+!i10b 1
+!s100 VGOnmMzel[VgoR^KWK6nS3
+IhUX??;fcf1^LNaaEjNV]42
+R3
+!s105 fsm_one_neuron_sv_unit
+S1
+R4
+w1702217192
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_one_neuron.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_one_neuron.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z8 !s108 1702396405.000000
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_one_neuron.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fsm_one_neuron.sv|
+!i113 0
+R6
+R1
+vfully_parallel
+R2
+R7
+!i10b 1
+!s100 A9o@>]zc;0io7NlCi35B?1
+I@Ao^Ie52R^;34A:lZQNMQ0
+R3
+!s105 fully_parallel_sv_unit
+S1
+R4
+w1702219818
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fully_parallel.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fully_parallel.sv
+L0 2
+R5
+r1
+!s85 0
+31
+R8
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fully_parallel.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/fully_parallel.sv|
+!i113 0
+R6
+R1
+vMAC
+R2
+R7
+!i10b 1
+!s100 HTgX8nf72Z7bnMQ^U?Sl03
+I9RH=0dcUCVfgZ99jzfAgK1
+R3
+!s105 MAC_sv_unit
+S1
+R4
+Z9 w1701276554
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MAC.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MAC.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R8
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MAC.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MAC.sv|
+!i113 0
+R6
+R1
+n@m@a@c
+vmemory
+R2
+R7
+!i10b 1
+!s100 hGZ6o7CDFJXEDlhV9ZPF;2
+I_WSn_jYkTLTBAfEjMMKZ`0
+R3
+!s105 memory_sv_unit
+S1
+R4
+w1702218772
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R8
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory.sv|
+!i113 0
+R6
+R1
+vmemory_N_neuron
+R2
+R7
+!i10b 1
+!s100 Y9N99V=>3mA[FA4CI`SI23
+Ia@XO@A_:gJPSN>9<e<20Q3
+R3
+!s105 memory_N_neuron_sv_unit
+S1
+R4
+w1702218268
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory_N_neuron.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory_N_neuron.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R8
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory_N_neuron.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/memory_N_neuron.sv|
+!i113 0
+R6
+R1
+nmemory_@n_neuron
+vMLP_N_neuron
+R2
+R7
+!i10b 1
+!s100 M^5^ZXJ0>ZHkf:j_G2BlI3
+ICOnVnihTMVMZR=<S;g?hQ1
+R3
+!s105 MLP_N_neuron_sv_unit
+S1
+R4
+w1702396335
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_N_neuron.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_N_neuron.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R8
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_N_neuron.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_N_neuron.sv|
+!i113 0
+R6
+R1
+n@m@l@p_@n_neuron
+vMLP_one_neuron
+R2
+!s110 1702396416
+!i10b 1
+!s100 3BRPa7`1Re^h7dz:6=WDF3
+ILmGiXN4]HA62nm6XB^bjS1
+R3
+!s105 MLP_one_neuron_sv_unit
+S1
+R4
+w1702247395
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_one_neuron.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_one_neuron.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1702396416.000000
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_one_neuron.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/MLP_one_neuron.sv|
+!i113 0
+R6
+R1
+n@m@l@p_one_neuron
+vMLP_tb
+R2
+Z10 !s110 1702396429
+!i10b 1
+!s100 WKbNgb^J4U1YL]a756E[G2
+IKIYoZSk2dOk8Y24K32>g11
+R3
+!s105 MLP_testbench_sv_unit
+S1
+R4
+w1702396398
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/tb/MLP_testbench.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/tb/MLP_testbench.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z11 !s108 1702396429.000000
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/tb/MLP_testbench.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/tb/MLP_testbench.sv|
+!i113 0
+R6
+R1
+n@m@l@p_tb
+vN_neurons
+R2
+R10
+!i10b 1
+!s100 ImMckP[hM@aC>QFDTY[J`1
+IbzE?4EzcnKo=4i:1[NSS>3
+R3
+!s105 N_neurons_sv_unit
+S1
+R4
+w1702219844
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/N_neurons.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/N_neurons.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/N_neurons.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/N_neurons.sv|
+!i113 0
+R6
+R1
+n@n_neurons
+vReLU
+R2
+R10
+!i10b 1
+!s100 PnHFZQRB8n54H^P3PJUEn3
+ISTmD2cMioac<@J[_g@[;m1
+R3
+!s105 ReLU_sv_unit
+S1
+R4
+R9
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/ReLU.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/ReLU.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/ReLU.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/ReLU.sv|
+!i113 0
+R6
+R1
+n@re@l@u
+vsingle_neuron
+R2
+R10
+!i10b 1
+!s100 ?jz[;OMZ40VGIHiRnABY=1
+I;cI@J]8?e;@7YIAd9PBS<2
+R3
+!s105 single_neuron_sv_unit
+S1
+R4
+w1702219836
+8F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/single_neuron.sv
+FF:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/single_neuron.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/single_neuron.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/IL2230/mlp_dcshell/MLP/rtl/single_neuron.sv|
+!i113 0
+R6
+R1

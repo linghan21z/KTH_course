@@ -1,0 +1,153 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Questasim/examples
+T_opt
+!s110 1698700008
+VP=ojeRagCFefD2bkglg=Z3
+04 11 4 work fsm_prog_tb fast 0
+=1-5c80b6c79110-65401ae8-21e-50dc
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+R0
+T_opt1
+!s110 1698700209
+V_1`:;;>A1oSBVTdB2EGTN1
+04 6 4 work FSM_TB fast 0
+=1-5c80b6c79110-65401bb1-eb-1f44
+R1
+R2
+n@_opt1
+R3
+vFSM
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 20 FSM_skeleton_sv_unit 0 22 9KJ@]M9=knk35<D4iT_id0
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 :=Eg5>K2VWR[N2@jFR?<@3
+IE9b6^CbBcQ3FF;_0_WDTD1
+!s105 FSM_skeleton_sv_unit
+S1
+Z6 dF:/Verilog_file/lab3_origin
+Z7 w1698684085
+Z8 8F:/Verilog_file/lab3_origin/FSM_skeleton.sv
+Z9 FF:/Verilog_file/lab3_origin/FSM_skeleton.sv
+L0 32
+Z10 OL;L;10.6c;65
+Z11 !s108 1698700195.000000
+Z12 !s107 instructions.sv|F:/Verilog_file/lab3_origin/FSM_skeleton.sv|
+Z13 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab3_origin/FSM_skeleton.sv|
+!i113 0
+Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@f@s@m
+4fsm_prog_tb
+R4
+Z15 !s110 1698700195
+!i10b 1
+!s100 4gM8a]`TQnYE=>C5VQOP63
+ILd9G49E;XNz1G;<Mhm1Rk2
+R5
+Z16 !s105 FSM_tb_1332_origin_sv_unit
+S1
+R6
+Z17 w1698700125
+Z18 8F:/Verilog_file/lab3_origin/FSM_tb_1332_origin.sv
+Z19 FF:/Verilog_file/lab3_origin/FSM_tb_1332_origin.sv
+Z20 Finstructions.sv
+L0 92
+R10
+r1
+!s85 0
+31
+R11
+Z21 !s107 instructions.sv|F:/Verilog_file/lab3_origin/FSM_tb_1332_origin.sv|
+Z22 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab3_origin/FSM_tb_1332_origin.sv|
+!i113 0
+R14
+R2
+XFSM_skeleton_sv_unit
+R4
+V9KJ@]M9=knk35<D4iT_id0
+r1
+!s85 0
+31
+!i10b 1
+!s100 YXde6bkHDP]9Q:KZKeZC<3
+I9KJ@]M9=knk35<D4iT_id0
+!i103 1
+S1
+R6
+R7
+R8
+R9
+R20
+Z23 L0 28
+R10
+R11
+R12
+R13
+!i113 0
+R14
+R2
+n@f@s@m_skeleton_sv_unit
+vFSM_TB
+R4
+R15
+!i10b 1
+!s100 ?H:Q^YdzEI29?8J<NKfFK0
+ImK9z9IOPn78KAWGG3RkC_1
+R5
+R16
+S1
+R6
+R17
+R18
+R19
+L0 30
+R10
+r1
+!s85 0
+31
+R11
+R21
+R22
+!i113 0
+R14
+R2
+n@f@s@m_@t@b
+Xinstructions_sv_unit
+R4
+!s110 1698700196
+!i10b 1
+!s100 zdXeNc2460NljS6J>JGBJ3
+I=QBad]F3QamSHO=n:JYzS0
+V=QBad]F3QamSHO=n:JYzS0
+!i103 1
+S1
+R6
+w1698494218
+8F:/Verilog_file/lab3_origin/instructions.sv
+FF:/Verilog_file/lab3_origin/instructions.sv
+R23
+R10
+r1
+!s85 0
+31
+!s108 1698700196.000000
+!s107 F:/Verilog_file/lab3_origin/instructions.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab3_origin/instructions.sv|
+!i113 0
+R14
+R2

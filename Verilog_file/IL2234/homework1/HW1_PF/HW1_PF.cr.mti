@@ -1,0 +1,15 @@
+F:/Verilog_file/homework1/HW1_PF.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/homework1/HW1_PF.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module count_1
+
+Top level modules:
+	count_1
+
+} {} {}} F:/Verilog_file/homework1/HW1_PF_tb.sv {1 {vlog -work work -vopt -sv -stats=none F:/Verilog_file/homework1/HW1_PF_tb.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module count_1_tb
+
+Top level modules:
+	count_1_tb
+
+} {} {}}

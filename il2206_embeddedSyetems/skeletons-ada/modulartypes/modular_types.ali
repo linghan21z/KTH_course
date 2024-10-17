@@ -1,0 +1,67 @@
+V "GNAT Lib v4.9"
+M P W=b
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U modular_types%b	modular_types.adb	1bf6784d NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.modular_aux%s  a-timoau.adb	a-timoau.ali
+W ada.text_io.modular_io%s
+Z system%s		system.ads		system.ali
+Z system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-timoau.ads		20090409150019 01c06610
+D a-timoio.ads		20090409150019 d32407b9
+D a-timoio.adb		20090409150019 de0ea1c6
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20140225151838 69adb1b9
+D i-cstrea.ads		20130412125801 8128536b
+D modular_types.adb	20230916130929 239b8d99
+D system.ads		20160213135250 bd760655
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-wchcon.ads		20140225151139 1b7d22d2
+X 1 ada.ads
+16K9*Ada 19e8 14|1r6 2r5 8r21
+X 7 a-textio.ads
+49K13*Text_IO 471e16 14|1w10 2r9 8r25
+242U14*Put 14|13s9 16s9
+263U14*Put_Line 14|15s9 18s9 22s17
+X 9 a-timoio.ads
+45k21*Modular_IO 84e27 14|8r33
+65U14 Put 14|14s21[7] 17s26[7] 21s34[7]
+X 14 modular_types.adb
+4U11*Modular_Types 4b11 24l5 24t18
+6M14 Counter_Value 8r45 10r12 14r25 17r30
+7K17 Counter_Value_IO[9|45] 14r4 17r9 21r17
+10m4 Count{6M14} 20m17 20r26 21r38
+19i13 I{integer}
+

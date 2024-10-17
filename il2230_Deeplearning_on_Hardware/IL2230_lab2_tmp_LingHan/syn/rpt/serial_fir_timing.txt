@@ -1,0 +1,100 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : serial_fir
+Version: M-2016.12
+Date   : Thu Nov 17 15:06:48 2022
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn90gtc
+Wire Load Model Mode: segmented
+
+  Startpoint: FSM_1/read_address_tmp_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: ARITHMETIC_UNIT_1/temp_result_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  delay_line         ZeroWireload          tcbn90gtc
+  fsm                ZeroWireload          tcbn90gtc
+  serial_fir         ZeroWireload          tcbn90gtc
+  arithmetic_unit    ZeroWireload          tcbn90gtc
+  MAC_DW_mult_tc_0   ZeroWireload          tcbn90gtc
+  MAC                ZeroWireload          tcbn90gtc
+  MAC_DW01_add_0     ZeroWireload          tcbn90gtc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FSM_1/read_address_tmp_reg[3]/CP (DFCNQD1)              0.00       0.00 r
+  FSM_1/read_address_tmp_reg[3]/Q (DFCNQD1)               0.16       0.16 r
+  FSM_1/read_address[3] (fsm)                             0.00       0.16 r
+  DELAY_LINE_1/read_address[3] (delay_line)               0.00       0.16 r
+  DELAY_LINE_1/U46/ZN (NR2D1)                             0.03       0.19 f
+  DELAY_LINE_1/U10/Z (AN2D0)                              0.14       0.33 f
+  DELAY_LINE_1/U6/ZN (AOI222D1)                           0.13       0.46 r
+  DELAY_LINE_1/U54/ZN (ND4D1)                             0.08       0.53 f
+  DELAY_LINE_1/sample_out[1] (delay_line)                 0.00       0.53 f
+  ARITHMETIC_UNIT_1/sample_in[1] (arithmetic_unit)        0.00       0.53 f
+  ARITHMETIC_UNIT_1/MAC_1/sample_in[1] (MAC)              0.00       0.53 f
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/a[1] (MAC_DW_mult_tc_0)
+                                                          0.00       0.53 f
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U230/ZN (INVD1)         0.10       0.63 r
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U216/Z (XOR2D1)         0.14       0.78 r
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U231/ZN (ND2D1)         0.08       0.86 f
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U223/ZN (NR2D1)         0.05       0.90 r
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U213/Z (OR2D1)          0.06       0.96 r
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U217/S (CMPE22D1)       0.07       1.03 r
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U17/CO (CMPE32D1)       0.10       1.13 r
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/U16/S (CMPE32D1)        0.08       1.21 f
+  ARITHMETIC_UNIT_1/MAC_1/mult_25/product[4] (MAC_DW_mult_tc_0)
+                                                          0.00       1.21 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/A[4] (MAC_DW01_add_0)
+                                                          0.00       1.21 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_4/CO (CMPE32D1)       0.11       1.32 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_5/CO (CMPE32D1)       0.06       1.38 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_6/CO (CMPE32D1)       0.06       1.43 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_7/CO (CMPE32D1)       0.06       1.49 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_8/CO (FA1D1)          0.06       1.55 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_9/CO (FA1D1)          0.06       1.61 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_10/CO (CMPE32D1)      0.06       1.66 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_11/CO (CMPE32D1)      0.06       1.72 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_12/CO (CMPE32D1)      0.06       1.78 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_13/CO (CMPE32D1)      0.06       1.84 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_14/CO (CMPE32D1)      0.06       1.89 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_15/CO (CMPE32D1)      0.06       1.95 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_16/CO (CMPE32D1)      0.06       2.01 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_17/CO (CMPE32D1)      0.06       2.07 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_18/CO (FA1D1)         0.06       2.12 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_19/CO (FA1D1)         0.06       2.18 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_20/CO (CMPE32D1)      0.06       2.24 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_21/CO (CMPE32D1)      0.06       2.29 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_22/CO (CMPE32D1)      0.05       2.35 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/U1_23/Z (XOR3D1)         0.09       2.44 f
+  ARITHMETIC_UNIT_1/MAC_1/add_25/SUM[23] (MAC_DW01_add_0)
+                                                          0.00       2.44 f
+  ARITHMETIC_UNIT_1/MAC_1/result[23] (MAC)                0.00       2.44 f
+  ARITHMETIC_UNIT_1/U3/Z (CKAN2D1)                        0.04       2.48 f
+  ARITHMETIC_UNIT_1/temp_result_reg[23]/D (DFCNQD1)       0.00       2.48 f
+  data arrival time                                                  2.48
+
+  clock clk (rise edge)                                   2.50       2.50
+  clock network delay (ideal)                             0.00       2.50
+  ARITHMETIC_UNIT_1/temp_result_reg[23]/CP (DFCNQD1)      0.00       2.50 r
+  library setup time                                     -0.01       2.49
+  data required time                                                 2.49
+  --------------------------------------------------------------------------
+  data required time                                                 2.49
+  data arrival time                                                 -2.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

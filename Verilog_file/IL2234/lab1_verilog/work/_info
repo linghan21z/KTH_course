@@ -1,0 +1,89 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Questasim/examples
+T_opt
+!s110 1695413910
+VXz:]jONg65eEO`RhRSC^C2
+Z1 04 2 4 work TB fast 0
+=1-5c80b6c79110-650df696-73-575c
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6c;65
+T_opt1
+!s110 1695411840
+V7]o[Tnii6P?^i^Ez^k4V`0
+R1
+=1-5c80b6c79110-650dee80-237-6604
+o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1695412006
+V[mmaPRBkOJmegb<HFHi`52
+R1
+=1-5c80b6c79110-650def26-47-5b8c
+o-quiet -auto_acc_if_foreign -work work
+R2
+n@_opt2
+R3
+R0
+vALU
+Z4 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z5 !s110 1695413879
+!i10b 1
+!s100 R7U1KkPNMJEkVJUQf1Mo22
+Il[BLa5R4@Lh<KE_nN?T@Q1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
+S1
+Z7 dF:/Verilog_file/lab1_verilog
+w1695413819
+8F:/Verilog_file/lab1_verilog/ALU.sv
+FF:/Verilog_file/lab1_verilog/ALU.sv
+L0 2
+Z8 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z9 !s108 1695413879.000000
+!s107 F:/Verilog_file/lab1_verilog/ALU.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab1_verilog/ALU.sv|
+!i113 0
+Z10 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@l@u
+vTB
+R4
+R5
+!i10b 1
+!s100 D7klB_E_L5227PPooh0=z2
+I9h>PQ:dXEL^g_Dd^[K`K:0
+R6
+!s105 ALU_tb_sv_unit
+S1
+R7
+w1695413814
+8F:/Verilog_file/lab1_verilog/ALU_tb.sv
+FF:/Verilog_file/lab1_verilog/ALU_tb.sv
+L0 3
+R8
+r1
+!s85 0
+31
+R9
+!s107 F:/Verilog_file/lab1_verilog/ALU_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|F:/Verilog_file/lab1_verilog/ALU_tb.sv|
+!i113 0
+R10
+R2
+n@t@b

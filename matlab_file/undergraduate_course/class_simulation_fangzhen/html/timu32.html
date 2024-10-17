@@ -1,0 +1,436 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>timu32</title><meta name="generator" content="MATLAB 9.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2023-06-13"><meta name="DC.source" content="timu32.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">%32&#39064; &#19977;&#36724;&#36716;&#21488;&#20869;&#29615;&#25511;&#21046;&#31995;&#32479;</span>
+clc
+<span class="comment">% num0=25; %&#26368;&#24320;&#22987;&#21098;&#20999;&#39057;&#29575; 21.6367&#24133;&#20540;&#35029;&#37327;=22.977dB,&#30456;&#20301;&#35029;&#37327;=56.2352&#24230;</span>
+num0=20000;  <span class="comment">%&#20462;&#27491;K&#20043;&#21518;Wc=593.7126&#24133;&#20540;&#35029;&#37327;=-35.0848dB,&#30456;&#20301;&#35029;&#37327;=-58.4549&#24230;</span>
+den0=conv([1,0],conv([0.0265,1],[0.00318,1]));
+
+
+figure
+bode(num0,den0) <span class="comment">%&#32472;&#21046;&#20271;&#24503;&#22270;</span>
+grid <span class="string">on</span>
+[Gm0,Pm0,Wcg0,Wcp0]=margin(num0,den0)
+r0=Pm0; <span class="comment">%&#26410;&#26657;&#27491;G0&#30340;&#30456;&#35282;&#35029;&#24230;</span>
+disp([<span class="string">'&#21098;&#20999;&#39057;&#29575;Wc'</span>,Wcp0])
+disp([<span class="string">'&#26410;&#26657;&#27491;&#31995;&#32479;&#30340;&#24133;&#20540;&#35029;&#37327;='</span>,num2str(20*log10(Gm0)),<span class="string">'dB,'</span>,<span class="string">'&#30456;&#20301;&#35029;&#37327;='</span>,num2str(Pm0),<span class="string">'&#24230;'</span>]);
+
+
+<span class="comment">% &#28382;&#21518;&#26657;&#27491;</span>
+<span class="comment">% numc1=conv([1/254.1],[1,9.6]);</span>
+<span class="comment">% denc1=[1,0.0378];</span>
+numc1=[0.1042,1];
+denc1=[26.455,1];
+[numg1,deng1]=series(num0,den0,numc1,denc1);
+
+figure
+bode(numg1,deng1) <span class="comment">%&#32472;&#21046;&#20271;&#24503;&#22270;</span>
+grid <span class="string">on</span>
+[Gm0,Pm0,Wcg0,Wcp0]=margin(numg1,deng1)
+r0=Pm0; <span class="comment">%&#26410;&#26657;&#27491;G0&#30340;&#30456;&#35282;&#35029;&#24230;</span>
+disp([<span class="string">'&#21098;&#20999;&#39057;&#29575;Wc'</span>,Wcp0])
+disp([<span class="string">'&#26410;&#26657;&#27491;&#31995;&#32479;&#30340;&#24133;&#20540;&#35029;&#37327;='</span>,num2str(20*log10(Gm0)),<span class="string">'dB,'</span>,<span class="string">'&#30456;&#20301;&#35029;&#37327;='</span>,num2str(Pm0),<span class="string">'&#24230;'</span>]);
+<span class="comment">% &#26657;&#27491;&#20043;&#21518;&#21098;&#20999;&#39057;&#29575;Wc=48.616</span>
+<span class="comment">% &#24133;&#20540;&#35029;&#37327;=10.1157dB,&#30456;&#20301;&#35029;&#37327;=17.9047&#24230;</span>
+
+
+<span class="comment">% &#36229;&#21069;&#26657;&#27491;</span>
+numc2=[0.028447,1];
+denc2=[0.006472,1];
+[numg2,deng2]=series(numg1,deng1,numc2,denc2);
+G12=tf(numg2,deng2) ;
+<span class="comment">% [z,p,k]=tf2zp(numg2,deng2) ;</span>
+<span class="comment">%z&#38646;&#28857;&#65292;p&#26497;&#28857;&#65292;&#24471;&#21040;&#26497;&#28857;&#37117;&#26159;&#36127;&#30340;&#65292;&#21487;&#35265;&#31995;&#32479;&#31283;&#23450;</span>
+
+figure
+bode(numg2,deng2) <span class="comment">%&#32472;&#21046;&#20271;&#24503;&#22270;</span>
+title(<span class="string">'&#28382;&#21518;&#36229;&#21069;&#26657;&#27491;&#21518;&#31995;&#32479;Bode&#22270;'</span>)
+grid <span class="string">on</span>
+[Gm0,Pm0,Wcg0,Wcp0]=margin(numg2,deng2)
+r0=Pm0; <span class="comment">%&#26410;&#26657;&#27491;G0&#30340;&#30456;&#35282;&#35029;&#24230;</span>
+disp([<span class="string">'&#21098;&#20999;&#39057;&#29575;Wc'</span>,Wcp0])
+disp([<span class="string">'&#26657;&#27491;&#31995;&#32479;&#30340;&#24133;&#20540;&#35029;&#37327;='</span>,num2str(20*log10(Gm0)),<span class="string">'dB,'</span>,<span class="string">'&#30456;&#20301;&#35029;&#37327;='</span>,num2str(Pm0),<span class="string">'&#24230;'</span>]);
+<span class="comment">% &#26657;&#27491;&#20043;&#21518;&#21098;&#20999;&#39057;&#29575;Wc= 73.8102</span>
+<span class="comment">% &#24133;&#20540;&#35029;&#37327;=14.2881dB,&#30456;&#20301;&#35029;&#37327;=45.4878&#24230;</span>
+
+
+<span class="comment">%&#20934;&#22791;&#38381;&#29615;&#24320;&#22987;&#21152;&#36755;&#20837;&#20449;&#21495;</span>
+[numb,denb]=cloop(numg2,deng2); <span class="comment">%&#26657;&#27491;&#21518;&#38381;&#29615;&#20256;&#20989;</span>
+G2=tf(numb,denb) ;<span class="comment">%&#26657;&#27491;&#21518;&#30340;&#38381;&#29615;&#31995;&#32479;</span>
+
+
+<span class="comment">% ------------</span>
+<span class="comment">%&#21333;&#20301;&#38454;&#36291;&#36755;&#20837;</span>
+t=0:0.001:1; n=length(t)
+G2=tf(numb,denb) ;<span class="comment">%&#26657;&#27491;&#21518;&#30340;&#38381;&#29615;&#31995;&#32479;</span>
+[y1]=step(numb,denb,t);<span class="comment">%&#26657;&#27491;&#21518;&#21333;&#20301;&#38454;&#36291;&#21709;&#24212;</span>
+
+figure
+y=step(numb,denb,t);<span class="comment">%&#26657;&#27491;&#21518;&#21333;&#20301;&#38454;&#36291;&#21709;&#24212;</span>
+plot(t,y,t,1+0*t)
+title(<span class="string">'&#21333;&#20301;&#38454;&#36291;&#21709;&#24212;&#26354;&#32447;'</span>)
+yss=y(n) <span class="comment">%&#35774;&#25105;&#20204;&#26102;&#38388;&#30340;&#26368;&#32456;&#20540;&#23545;&#24212;&#30340;&#23601;&#26159;&#31283;&#24577;&#20540;</span>
+Mp=((max(y)-yss)/yss);
+disp([<span class="string">'&#26657;&#27491;&#21518;&#26368;&#22823;&#36229;&#35843;&#37327;M1='</span>,num2str(Mp)]); <span class="comment">%&#26368;&#22823;&#36229;&#35843;&#37327;Mp</span>
+
+<span class="keyword">for</span> i=n:-1:1<span class="comment">%&#35813;&#23618;&#24490;&#29615;&#29992;&#20110;&#35745;&#31639;&#35843;&#25972;&#26102;&#38388;&#65292;&#25105;&#20204;&#26159;&#20174;&#26368;&#32456;&#26102;&#38388;&#65288;&#26080;&#31351;&#36828;&#30340;&#26102;&#38388;&#65289;&#24448;&#21069;&#24320;&#22987;&#36941;&#21382;&#26597;&#25214;&#65292;&#21542;&#21017;&#20174;&#21069;&#24320;&#22987;&#26597;&#25214;&#30340;&#35805;&#20250;&#20986;&#38169;</span>
+    <span class="keyword">if</span> y(i)&gt;=1.02*yss|y(i)&lt;=0.98*yss <span class="comment">%&#24403;&#24471;&#21040;&#30340;&#20540;&#19982;&#31283;&#24577;&#20540;&#24046;&#30340;&#32477;&#23545;&#20540;&#19982;&#31283;&#24577;&#20540;&#20043;&#27604;&#20026;2%&#26102;&#35828;&#26126;&#21040;&#36798;&#20102;&#35843;&#25972;&#26102;&#38388;</span>
+        ts=t(i);<span class="comment">%ts&#23384;&#20648;&#35843;&#25972;&#26102;&#38388;</span>
+        <span class="keyword">break</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+disp(<span class="string">'&#35843;&#25972;&#26102;&#38388;ts0:'</span>),disp(ts)
+
+<span class="comment">%&#35745;&#31639;&#31283;&#24577;&#35823;&#24046;</span>
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); <span class="comment">%1-fai(s)</span>
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; <span class="comment">%&#35823;&#24046;&#20256;&#20989;</span>
+numr=1;denr=[1,0];R=tf(numr,denr); <span class="comment">%&#21333;&#20301;&#38454;&#36291;</span>
+ess=dcgain(GGGG*R)  <span class="comment">%&#27714;&#31283;&#24577;&#35823;&#24046;</span>
+<span class="comment">% --------------</span>
+
+<span class="comment">%-------------</span>
+<span class="comment">% &#36825;&#19968;&#37096;&#20998;&#26159;&#21333;&#20301;&#26012;&#22369;&#20449;&#21495;&#36755;&#20837;</span>
+t=0:0.0001:10; n=length(t);
+alpha = 1;
+ramp = alpha*t;
+[y2]=lsim(G2,ramp,t);<span class="comment">%&#26657;&#27491;&#21518;&#21333;&#20301;&#26012;&#22369;&#21709;&#24212;</span>
+yr=1*t;
+lsimplot(G2,ramp,t) <span class="comment">%&#36825;&#19968;&#27493;&#21487;&#20197;&#30011;&#20986;&#36895;&#24230;&#20449;&#21495;&#21644;&#21709;&#24212;&#22312;&#21516;&#19968;&#24352;&#22270;</span>
+essmax=[];
+<span class="keyword">for</span> i = 1:2000
+    essmax(i) =abs(yr(i)-y2(i));
+<span class="keyword">end</span>
+[m,p]=max(essmax) <span class="comment">%&#25214;&#21040;&#21160;&#24577;&#20559;&#24046;&#26368;&#22823;&#22823;&#30340;&#22320;&#26041;&#26159;t=0.0238,essmax&#20026;0.0143</span>
+
+<span class="comment">%&#35745;&#31639;&#31283;&#24577;&#35823;&#24046;</span>
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); <span class="comment">%1-fai(s)</span>
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; <span class="comment">%&#35823;&#24046;&#20256;&#20989;</span>
+numr=1;denr=[1,0,0];R=tf(numr,denr); <span class="comment">%&#21333;&#20301;&#36895;&#24230;&#65292;&#31283;&#24577;&#35823;&#24046;&#32456;&#20540;5.0026e-05</span>
+ess=dcgain(GGGG*R)  <span class="comment">%&#27714;&#31283;&#24577;&#35823;&#24046;</span>
+
+
+<span class="comment">%-----------------&#21333;&#20301;&#21152;&#36895;&#24230;&#23454;&#39564;</span>
+t=0:0.0001:0.1; n=length(t);
+aa=(t.*t)/2;
+[ya]=lsim(G2,aa,t);<span class="comment">%&#26657;&#27491;&#21518;&#21333;&#20301;&#21152;&#36895;&#24230;&#21709;&#24212;</span>
+
+figure
+ plot(t,ya,<span class="string">'r'</span>,t,t.*t/2,<span class="string">'b'</span>)
+title(<span class="string">'&#65288;0&#65292;1&#65289;&#21021;&#22987;&#38454;&#27573;'</span>)
+
+essmax=[];
+<span class="keyword">for</span> i = 1:100
+    essmax(i) =abs(aa(i)-ya(i));
+<span class="keyword">end</span>
+[m,p]=max(essmax) <span class="comment">%&#25214;&#21040;&#21160;&#24577;&#20559;&#24046;&#26368;&#22823;&#22823;&#30340;&#22320;&#26041;</span>
+
+<span class="comment">%&#35745;&#31639;&#31283;&#24577;&#35823;&#24046;</span>
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); <span class="comment">%1-fai(s)</span>
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; <span class="comment">%&#35823;&#24046;&#20256;&#20989;</span>
+numr=1;denr=[1,0,0,0];R=tf(numr,denr); <span class="comment">%&#21333;&#20301;&#21152;&#36895;&#24230;</span>
+ess=dcgain(GGGG*R)  <span class="comment">%&#27714;&#31283;&#24577;&#35823;&#24046;</span>
+<span class="comment">% --------------</span>
+
+
+<span class="comment">% % ---------------&#27491;&#24358;&#36755;&#20837;</span>
+w=0.628; usin=400*sin(w*t)/w;
+[y3]=lsim(G2,usin,t);<span class="comment">%&#26657;&#27491;&#21518;&#27491;&#24358;&#20449;&#21495;&#21709;&#24212;</span>
+yr=usin;
+figure
+subplot(1,2,1)
+plot(t,y3,<span class="string">'r'</span>,t,yr,<span class="string">'b'</span>) <span class="comment">%&#25226;&#27491;&#24358;&#36755;&#20837;&#21644;&#21709;&#24212;&#30011;&#22312;&#19968;&#36215;</span>
+title(<span class="string">'&#27491;&#24358;&#20449;&#21495;&#20316;&#29992;&#19979;&#30340;&#21709;&#24212;&#26354;&#32447;'</span>)
+grid <span class="string">on</span>
+
+<span class="comment">%&#25226;t&#26102;&#38388;&#21464;&#37327;&#25442;&#25104;m</span>
+m=0:0.0001:0.10; n=length(m);
+w=0.628; usin=400*sin(w*m)/w; yr2=usin;
+[y4]=lsim(G2,usin,m);
+subplot(1,2,2)
+plot(m,y4,<span class="string">'r'</span>,m,yr2,<span class="string">'b'</span>) <span class="comment">%&#25226;&#27491;&#24358;&#36755;&#20837;&#21644;&#21709;&#24212;&#30011;&#22312;&#19968;&#36215;</span>
+grid <span class="string">on</span>
+title(<span class="string">'&#21021;&#22987;&#38454;&#27573;&#65288;0&#65292;0.1&#65289;'</span>)
+
+essmax=[];
+<span class="keyword">for</span> i = 1:1000
+    essmax(i) =abs(yr(i)-y3(i));
+<span class="keyword">end</span>
+[m,p]=max(essmax) <span class="comment">%&#25214;&#21040;&#21160;&#24577;&#20559;&#24046;&#26368;&#22823;&#22823;&#30340;&#22320;&#26041;</span>
+
+<span class="comment">%---------------</span>
+<span class="comment">%&#35745;&#31639;&#27491;&#24358;&#36755;&#20837;&#31283;&#24577;&#35823;&#24046;</span>
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); <span class="comment">%1-fai(s)</span>
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; <span class="comment">%&#35823;&#24046;&#20256;&#20989;</span>
+numr=400;denr=[1,0,w^2];R=tf(numr,denr); <span class="comment">%&#27491;&#24358;&#36755;&#20837;ess=0</span>
+ess=dcgain(GGGG*R)  <span class="comment">%&#27714;&#31283;&#24577;&#35823;&#24046;</span>
+</pre><pre class="codeinput"><span class="comment">%&#26657;&#27491;&#35013;&#32622;&#30340;BODE  &#22270;</span>
+numc1=[0.1042,1]; denc1=[26.455,1];  <span class="comment">%9.6-up,0.0378-down</span>
+numc2=[0.028447,1]; denc2=[0.006472,1]; <span class="comment">%35.15-up,154.52=down</span>
+[numc,denc]=series(numc1,denc1,numc2,denc2);
+<span class="comment">%&#31526;&#21512;&#28382;&#21518;-&#36229;&#21069;&#26657;&#27491;&#32593;&#32476;&#30340;Bode &#22270;</span>
+figure;
+bode(numc,denc)
+grid <span class="string">on</span>
+title(<span class="string">'&#28382;&#21518;-&#36229;&#21069;&#26657;&#27491;&#35013;&#32622;&#30340;Bode &#22270;'</span>)
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2021b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%32题 三轴转台内环控制系统
+clc
+% num0=25; %最开始剪切频率 21.6367幅值裕量=22.977dB,相位裕量=56.2352度
+num0=20000;  %修正K之后Wc=593.7126幅值裕量=-35.0848dB,相位裕量=-58.4549度
+den0=conv([1,0],conv([0.0265,1],[0.00318,1]));
+
+
+figure
+bode(num0,den0) %绘制伯德图
+grid on
+[Gm0,Pm0,Wcg0,Wcp0]=margin(num0,den0)
+r0=Pm0; %未校正G0的相角裕度
+disp(['剪切频率Wc',Wcp0])
+disp(['未校正系统的幅值裕量=',num2str(20*log10(Gm0)),'dB,','相位裕量=',num2str(Pm0),'度']);
+
+
+% 滞后校正
+% numc1=conv([1/254.1],[1,9.6]);
+% denc1=[1,0.0378];
+numc1=[0.1042,1];
+denc1=[26.455,1];
+[numg1,deng1]=series(num0,den0,numc1,denc1);
+
+figure
+bode(numg1,deng1) %绘制伯德图
+grid on
+[Gm0,Pm0,Wcg0,Wcp0]=margin(numg1,deng1)
+r0=Pm0; %未校正G0的相角裕度
+disp(['剪切频率Wc',Wcp0])
+disp(['未校正系统的幅值裕量=',num2str(20*log10(Gm0)),'dB,','相位裕量=',num2str(Pm0),'度']);
+% 校正之后剪切频率Wc=48.616
+% 幅值裕量=10.1157dB,相位裕量=17.9047度
+
+
+% 超前校正
+numc2=[0.028447,1];
+denc2=[0.006472,1];
+[numg2,deng2]=series(numg1,deng1,numc2,denc2);
+G12=tf(numg2,deng2) ;
+% [z,p,k]=tf2zp(numg2,deng2) ;
+%z零点，p极点，得到极点都是负的，可见系统稳定
+
+figure
+bode(numg2,deng2) %绘制伯德图
+title('滞后超前校正后系统Bode图')
+grid on
+[Gm0,Pm0,Wcg0,Wcp0]=margin(numg2,deng2)
+r0=Pm0; %未校正G0的相角裕度
+disp(['剪切频率Wc',Wcp0])
+disp(['校正系统的幅值裕量=',num2str(20*log10(Gm0)),'dB,','相位裕量=',num2str(Pm0),'度']);
+% 校正之后剪切频率Wc= 73.8102
+% 幅值裕量=14.2881dB,相位裕量=45.4878度
+
+
+%准备闭环开始加输入信号
+[numb,denb]=cloop(numg2,deng2); %校正后闭环传函
+G2=tf(numb,denb) ;%校正后的闭环系统
+
+
+% REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+%单位阶跃输入
+t=0:0.001:1; n=length(t)
+G2=tf(numb,denb) ;%校正后的闭环系统
+[y1]=step(numb,denb,t);%校正后单位阶跃响应
+
+figure
+y=step(numb,denb,t);%校正后单位阶跃响应
+plot(t,y,t,1+0*t)
+title('单位阶跃响应曲线')
+yss=y(n) %设我们时间的最终值对应的就是稳态值
+Mp=((max(y)-yss)/yss);
+disp(['校正后最大超调量M1=',num2str(Mp)]); %最大超调量Mp
+
+for i=n:-1:1%该层循环用于计算调整时间，我们是从最终时间（无穷远的时间）往前开始遍历查找，否则从前开始查找的话会出错
+    if y(i)>=1.02*yss|y(i)<=0.98*yss %当得到的值与稳态值差的绝对值与稳态值之比为2%时说明到达了调整时间
+        ts=t(i);%ts存储调整时间
+        break
+    end
+end
+disp('调整时间ts0:'),disp(ts)
+
+%计算稳态误差
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); %1-fai(s)
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; %误差传函
+numr=1;denr=[1,0];R=tf(numr,denr); %单位阶跃
+ess=dcgain(GGGG*R)  %求稳态误差
+% REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+% 这一部分是单位斜坡信号输入
+t=0:0.0001:10; n=length(t);
+alpha = 1;
+ramp = alpha*t;
+[y2]=lsim(G2,ramp,t);%校正后单位斜坡响应
+yr=1*t;
+lsimplot(G2,ramp,t) %这一步可以画出速度信号和响应在同一张图
+essmax=[];
+for i = 1:2000
+    essmax(i) =abs(yr(i)-y2(i));
+end
+[m,p]=max(essmax) %找到动态偏差最大大的地方是t=0.0238,essmax为0.0143
+
+%计算稳态误差
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); %1-fai(s)
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; %误差传函
+numr=1;denr=[1,0,0];R=tf(numr,denr); %单位速度，稳态误差终值5.0026e-05
+ess=dcgain(GGGG*R)  %求稳态误差
+
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-单位加速度实验
+t=0:0.0001:0.1; n=length(t);
+aa=(t.*t)/2;
+[ya]=lsim(G2,aa,t);%校正后单位加速度响应
+
+figure
+ plot(t,ya,'r',t,t.*t/2,'b')
+title('（0，1）初始阶段')
+
+essmax=[];
+for i = 1:100
+    essmax(i) =abs(aa(i)-ya(i));
+end
+[m,p]=max(essmax) %找到动态偏差最大大的地方
+
+%计算稳态误差
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); %1-fai(s)
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; %误差传函
+numr=1;denr=[1,0,0,0];R=tf(numr,denr); %单位加速度
+ess=dcgain(GGGG*R)  %求稳态误差
+% REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH
+
+
+% % REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-正弦输入
+w=0.628; usin=400*sin(w*t)/w; 
+[y3]=lsim(G2,usin,t);%校正后正弦信号响应
+yr=usin;
+figure
+subplot(1,2,1)
+plot(t,y3,'r',t,yr,'b') %把正弦输入和响应画在一起
+title('正弦信号作用下的响应曲线')
+grid on
+
+%把t时间变量换成m
+m=0:0.0001:0.10; n=length(m);
+w=0.628; usin=400*sin(w*m)/w; yr2=usin;
+[y4]=lsim(G2,usin,m);
+subplot(1,2,2)
+plot(m,y4,'r',m,yr2,'b') %把正弦输入和响应画在一起
+grid on
+title('初始阶段（0，0.1）')
+
+essmax=[];
+for i = 1:1000
+    essmax(i) =abs(yr(i)-y3(i));
+end
+[m,p]=max(essmax) %找到动态偏差最大大的地方
+
+%REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+%计算正弦输入稳态误差
+GG=G2;
+GGG=tf(GG.den{1}-GG.num{1},GG.den{1}); %1-fai(s)
+nums=[1 0];dens=1;Gs=tf(nums,dens);
+GGGG=GGG*Gs; %误差传函
+numr=400;denr=[1,0,w^2];R=tf(numr,denr); %正弦输入ess=0
+ess=dcgain(GGGG*R)  %求稳态误差
+
+%%
+%校正装置的BODE  图
+numc1=[0.1042,1]; denc1=[26.455,1];  %9.6-up,0.0378-down
+numc2=[0.028447,1]; denc2=[0.006472,1]; %35.15-up,154.52=down
+[numc,denc]=series(numc1,denc1,numc2,denc2);
+%符合滞后-超前校正网络的Bode 图
+figure;
+bode(numc,denc)
+grid on
+title('滞后-超前校正装置的Bode 图')
+
+##### SOURCE END #####
+--></body></html>

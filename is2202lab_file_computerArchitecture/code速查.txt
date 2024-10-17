@@ -1,0 +1,6 @@
+查看内存大小 
+df -h
+
+打开查看该文件
+nvim 文件名
+locate the statistics file that was dumped for this simulation, which can be found under: ./m5out/stats.txt.
